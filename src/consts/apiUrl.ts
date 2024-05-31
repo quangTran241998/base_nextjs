@@ -1,0 +1,9 @@
+export const ROOT_URL = `${process.env.VITE_API_URL}`;
+export const ROOT_URL_LOGIN = `${process.env.VITE_API_URL_LOGIN}`;
+export const ESIM_PATH = `esim`;
+export const NATIONS_PATH = `nations`;
+export const PACKAGES_PATH = `packages`;
+export const PACKAGES_PATH_DETAIL = `detail-package`;
+export const AREA_PATH = `areas`;
+export const DEVICE_PATH = `divices`;
+export const SEARCH_LOCATION_PATH = `search-location`;

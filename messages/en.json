@@ -1,5 +1,11 @@
 {
-    "Index": {
-      "title": "Hello world!"
-    }
+  "Index": {
+    "title": "Hello world!"
+  },
+  "header": {
+    "getEsim": "Get new eSIM",
+    "aboutSkyFi": "About SkyFi",
+    "contact": "Contact",
+    "logIn": "Log in"
   }
+}

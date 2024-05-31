@@ -1,5 +1,11 @@
 {
-    "Index": {
-      "title": "Xin chao!"
-    }
+  "Index": {
+    "title": "Xin chao!"
+  },
+  "header": {
+    "getEsim": "Mua eSIM",
+    "aboutSkyFi": "Giới thiệu về SkyFi",
+    "contact": "Liên hệ",
+    "logIn": "Đăng nhập"
   }
+}
