@@ -12,7 +12,9 @@ const Page = () => {
       {/* <h1 className="text-red-500" onClick={() => console.log("123")}>
         {t("title")}
       </h1> */}
-      <CommonComponent.Container>czxc</CommonComponent.Container>
+      <CommonComponent.Container>
+        <div className="">fsdfsf</div>
+      </CommonComponent.Container>
     </>
   );
 };

@@ -1,4 +1,5 @@
 {
+  "login": "",
   "Index": {
     "title": "Hello world!"
   },
@@ -7,5 +8,36 @@
     "aboutSkyFi": "About SkyFi",
     "contact": "Contact",
     "logIn": "Log in"
+  },
+  "lang": {
+    "vi": "Vietnamese",
+    "en": "English"
+  },
+  "footer": {
+    "skyfiDescription": "SkyFi is a global high-speed eSIM service (4G, 5G) provider, connecting to utilities: aviation, food services, entertainment, shopping...",
+    "popularCountries": "Popular countries",
+    "Singapore": "Singapore",
+    "China": "China",
+    "Korea": "Korea",
+    "Taiwan": "Taiwan",
+    "Japan": "Japan",
+    "Cambodia": "Cambodia",
+    "Kazakhstan": "Kazakhstan",
+    "customerSupport": "Customer support",
+    "contactUs": "Contact us",
+    "followUs": "Follow us",
+    "privacyPolicy": "Privacy policy",
+    "termsAndConditions": "Terms & Conditions",
+    "cookiesPolicy": "Cookies Policy",
+    "customerCare": "Customer care",
+    "activateEsim": "Activate eSIM",
+    "paymentProblems": "Payment problems",
+    "installEsim": "Install eSIM",
+    "deviceCompatibilityWithESIM": "Device compatibility with esim",
+    "supportTech": "Support tech",
+    "other": "Other",
+    "aboutSkyFi": "About SkyFi",
+    "contact": "Contact",
+    "trandingSettingEsim": "Instructions for installing eSIM"
   }
 }

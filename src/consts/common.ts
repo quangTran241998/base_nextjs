@@ -9,7 +9,9 @@ export enum PERMISSION_ENUM {
   USER = "user",
   APP_MANAGER = "appmanager",
 }
-
+export enum STATUS_API {
+  success = "success",
+}
 export const PermissionOptions = Object.entries(PERMISSION_ENUM)
   .filter((el) => {
     const [key, value] = el;
@@ -28,6 +30,7 @@ export const NUMBER_DEFAULT_PAGE = 0;
 
 export const classCommon = {
   navTop: "nav-top",
+  header: "header",
 };
 
 export const indexElement = {
@@ -35,16 +38,35 @@ export const indexElement = {
   popup: 102,
   header: 100,
   overlay: 100,
-  layoutTop: 40,
+  layoutTop: 10,
   layoutContent: 20,
-  pushUp: 50,
+  pushUp: 103,
+};
+
+export const device = () => {
+  const width = screen.width;
+
+  return {
+    isMobile: width < 768,
+    isTablet: width > 1024,
+    isDesktop: width > 1200,
+  };
+};
+
+export const breakpoints = {
+  xs: 0,
+  sm: 600,
+  md: 768,
+  lg: 984,
+  xl: 1240,
 };
 
 export const linkWebView = {
   skyfi: "https://skyfi.vn/",
   emailSkyfi: "support@skyfi.vn",
   phone: "1900 638 380",
-  cookies: "https://developers.google.com/analytics/resources/concepts/gaConceptsCookies",
+  cookies:
+    "https://developers.google.com/analytics/resources/concepts/gaConceptsCookies",
   privacy: "www.google.com/analytics/learn/privacy.html",
   preventGa: "http://tools.google.com/dlpage/gaoptout?hl=en-GB",
   infoPrivate: "https://goo.gl/CUUMgi",
@@ -53,15 +75,3 @@ export const linkWebView = {
   paypal: "https://paypal.com",
   stripe: "https://stripe.com",
 };
-
-export const formatNumber = (num: number, unit: string = "VNĐ") => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " " + unit;
-export const total = (x: number, y: number) => {
-  let total = 0;
-  total += x + y;
-  return formatNumber(total);
-};
-export const formatNumberNoVND = (num: number) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " ";
-
-export enum STATUS_API {
-  success = "success",
-}

@@ -1,4 +1,5 @@
 {
+  "login": "",
   "Index": {
     "title": "Xin chao!"
   },
@@ -7,5 +8,38 @@
     "aboutSkyFi": "Giới thiệu về SkyFi",
     "contact": "Liên hệ",
     "logIn": "Đăng nhập"
+  },
+  "lang": {
+    "vi": "Tiếng việt",
+    "en": "English"
+  },
+  "footer": {
+    "skyfiDescription": "SkyFi là nhà cung cấp dịch vụ eSIM (4G, 5G) với tốc độ cao toàn cầu, kết nối với các tiện ích: hàng không, ăn uống, vui chơi, giải trí, mua sắm...",
+    "popularCountries": "Các quốc gia phổ biến",
+
+    "Singapore": "Singapore",
+    "China": "Trung Quốc",
+    "Korea": "Hàn Quốc",
+    "Taiwan": "Đài Loan",
+    "Japan": "Nhật Bản",
+    "Cambodia": "Campuchia",
+    "Kazakhstan": "Kazakhstan",
+    "customerSupport": "Hỗ trợ khách hàng",
+    "contactUs": "Liên hệ với chúng tôi",
+    "followUs": "Theo dõi chúng tôi",
+    "privacyPolicy": "Chính sách quyền riêng tư",
+    "termsAndConditions": "Điều khoản & Điều kiện",
+    "cookiesPolicy": "Chính sách về Cookies",
+    "customerCare": "Chăm sóc khách hàng",
+    "activateEsim": "Kích hoạt eSIM",
+    "paymentProblems": "Vấn đề về thanh toán",
+    "installEsim": "Cài đặt eSIM",
+    "deviceCompatibilityWithESIM": "Khả năng tương thích của thiết bị với eSIM",
+    "supportTech": "Vấn đề về kết nối - Cần hỗ trợ kỹ thuật",
+    "other": "Khác",
+    "getEsim": "Get new eSIM",
+    "aboutSkyFi": "Giới thiệu về SkyFi",
+    "contact": "Liên hệ",
+    "trandingSettingEsim": "Hướng dẫn cài đặt eSIM"
   }
 }

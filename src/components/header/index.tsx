@@ -4,8 +4,17 @@ import { sourcesIcons } from "../IconsSvg/index";
 import { useTranslations } from "next-intl";
 import BaseRoute from "@/consts/baseRoute";
 import { CommonComponent } from "../commonComponent";
+import PopoverDemo from "../commonComponent/menu";
+import { LANGUAGE } from "@/interfaces/enum";
+import LangSelect from "./Lang";
 
-const Header = () => {
+interface Props {
+  locale: LANGUAGE;
+}
+
+const Header = (props: Props) => {
+  const { locale } = props;
+
   const t = useTranslations("header");
 
   const pages = [
@@ -18,7 +27,7 @@ const Header = () => {
   return (
     <div>
       <CommonComponent.Container>
-        <div className=" items-center justify-between grid grid-cols-12">
+        <div className=" items-center justify-between grid grid-cols-12 py-[19px]">
           <div className=" col-span-8">
             <div className="flex items-center">
               <div className="">
@@ -29,7 +38,7 @@ const Header = () => {
                   return (
                     <p
                       key={item.title}
-                      className="text-[18px] font-medium px-10 py-4"
+                      className="text-[18px] font-medium px-10 py-1"
                     >
                       {t(item.title)}
                     </p>
@@ -39,7 +48,13 @@ const Header = () => {
             </div>
           </div>
           <div className="col-span-4">
-            <div className="flex justify-end">2</div>
+            <div className="flex justify-end">
+              <div className="flex items-center mr-10">
+                <sourcesIcons.Avatar />
+                <p className="ml-2 text-[18px] font-medium">{t("logIn")}</p>
+              </div>
+              <LangSelect locale={locale} />
+            </div>
           </div>
         </div>
       </CommonComponent.Container>
