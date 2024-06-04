@@ -1,11 +1,12 @@
 import createMiddleware from "next-intl/middleware";
+import { LANGUAGE } from "./interfaces/enum";
 
 export default createMiddleware({
   // A list of all locales that are supported
-  locales: ["en", "vi"],
+  locales: [LANGUAGE.EN, LANGUAGE.VI],
 
   // Used when no locale matches
-  defaultLocale: "vi",
+  defaultLocale: LANGUAGE.VI,
 });
 
 export const config = {

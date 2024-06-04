@@ -1,21 +1,13 @@
 // index.jsx
-import * as React from "react";
 import * as Popover from "@radix-ui/react-popover";
-import { sourcesIcons } from "../../IconsSvg/index";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import createMiddleware from "@/middleware";
+import { sourcesIcons } from "../../IconsSvg/index";
 
 const PopoverDemo = () => {
   const t = useTranslations("lang");
 
   const langOptions = ["vi", "en"];
-
-  console.log(createMiddleware, "createMiddleware");
-
-  // const pathnameIsMissingLocale = locales.every(
-  //   (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
-  // )
 
   return (
     <Popover.Root>

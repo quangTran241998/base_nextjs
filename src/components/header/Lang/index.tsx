@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { LANGUAGE } from "@/interfaces/enum";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Props {
   locale: LANGUAGE;
@@ -15,6 +15,9 @@ interface Props {
 
 const LangSelect = (props: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [widthContent, setWidthContent] = useState<number>(0);
+
+  const ref = useRef<HTMLDivElement>(null);
   const { locale } = props;
   const t = useTranslations("lang");
   const router = useRouter();
@@ -29,6 +32,10 @@ const LangSelect = (props: Props) => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    setWidthContent(ref.current?.offsetWidth ?? 0);
+  }, [ref]);
+
   return (
     <Popover.Root open={isOpen} onOpenChange={() => setIsOpen(!isOpen)}>
       <Popover.Trigger
@@ -36,14 +43,20 @@ const LangSelect = (props: Props) => {
           setIsOpen(!isOpen);
         }}
       >
-        <div className="flex items-center px-2 py-3 rounded-[8px] border">
+        <div
+          ref={ref}
+          className="flex items-center px-2 py-3 rounded-[8px] border"
+        >
           <sourcesIcons.Language />
           <p className="ml-2 text-[18px] font-medium px-2">{t(locale)}</p>
           <sourcesIcons.ChevronDown />
         </div>
       </Popover.Trigger>
-      <Popover.Content align={"start"}>
-        <div className="border py-2 rounded-[8px] w-[188px] mt-1 bg-white">
+      <Popover.Content align={"start"} className="z-10">
+        <div
+          className="border py-2 rounded-[8px] mt-1 bg-white"
+          style={{ width: `${widthContent}px` }}
+        >
           {langOptions.map((item) => {
             return (
               <p

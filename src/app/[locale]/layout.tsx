@@ -1,3 +1,4 @@
+import { LANGUAGE } from "@/interfaces/enum";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
@@ -6,7 +7,7 @@ export default async function LocaleLayout({
   params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: LANGUAGE };
 }) {
   // Providing all messages to the client
   // side is the easiest way to get started

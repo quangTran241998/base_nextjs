@@ -1,6 +1,12 @@
 const Empty = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="99" viewBox="0 0 108 99" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="108"
+      height="99"
+      viewBox="0 0 108 99"
+      fill="none"
+    >
       <path
         d="M53.4488 75.117C70.9169 75.117 85.0776 60.9218 85.0776 43.4111C85.0776 25.9003 70.9169 11.7051 53.4488 11.7051C35.9807 11.7051 21.8199 25.9003 21.8199 43.4111C21.8199 60.9218 35.9807 75.117 53.4488 75.117Z"
         fill="#EAEEF9"
@@ -32,9 +38,9 @@ const Empty = () => {
       <path
         d="M79.2339 41.1681V55.2029C79.2339 56.9892 77.7702 58.5204 75.9247 58.5204H29.6588C27.8769 58.5204 26.3496 57.053 26.3496 55.2029V39.9561"
         stroke="#1676EE"
-        stroke-width="3"
+        strokeWidth="3"
         strokeLinecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <g filter="url(#filter0_d_422_13815)">
         <path
@@ -62,7 +68,10 @@ const Empty = () => {
         strokeMiterlimit="10"
         strokeDasharray="4 4"
       />
-      <path d="M55.1033 52.9795H51.2213V53.9364H55.1033V52.9795Z" fill="#28334A" />
+      <path
+        d="M55.1033 52.9795H51.2213V53.9364H55.1033V52.9795Z"
+        fill="#28334A"
+      />
       <path
         d="M89.9779 1.49832C89.9143 2.45524 89.8507 3.28457 89.1506 3.47596C88.4506 3.66734 88.1324 3.0294 87.6869 2.13627C87.2414 1.30694 87.496 0.477607 88.2597 0.286223C89.0233 0.0948384 90.1052 0.350017 89.9779 1.49832Z"
         fill="#DAE2EB"
@@ -87,7 +96,12 @@ const Empty = () => {
         d="M20.229 18.7225C20.229 18.2122 20.6108 17.8294 21.0563 17.7656C21.2472 17.7018 21.5018 17.7018 21.7564 17.7656C22.7746 17.8294 23.6019 18.4036 23.5383 19.0415C23.4746 19.6795 22.6473 20.126 21.6291 19.9984C21.4382 19.9984 21.2472 19.9346 21.0563 19.8708C20.5472 19.7433 20.229 19.2329 20.229 18.7225Z"
         fill="#28334A"
       />
-      <path d="M24.4927 18.9131C31.0475 18.9131 43.139 22.7408 43.33 36.7118" stroke="#C9D4E2" strokeMiterlimit="10" strokeDasharray="4 4" />
+      <path
+        d="M24.4927 18.9131C31.0475 18.9131 43.139 22.7408 43.33 36.7118"
+        stroke="#C9D4E2"
+        strokeMiterlimit="10"
+        strokeDasharray="4 4"
+      />
       <defs>
         <filter
           id="filter0_d_422_13815"
@@ -99,12 +113,29 @@ const Empty = () => {
           colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
           <feOffset dy="-9" />
           <feGaussianBlur stdDeviation="5" />
-          <feColorMatrix type="matrix" values="0 0 0 0 0.397708 0 0 0 0 0.47749 0 0 0 0 0.575 0 0 0 0.13 0" />
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_422_13815" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_422_13815" result="shape" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.397708 0 0 0 0 0.47749 0 0 0 0 0.575 0 0 0 0.13 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_422_13815"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_422_13815"
+            result="shape"
+          />
         </filter>
         <filter
           id="filter1_d_422_13815"
@@ -116,18 +147,49 @@ const Empty = () => {
           colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
           <feOffset dy="11" />
           <feGaussianBlur stdDeviation="11" />
-          <feColorMatrix type="matrix" values="0 0 0 0 0.397708 0 0 0 0 0.47749 0 0 0 0 0.575 0 0 0 0.18 0" />
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_422_13815" />
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_422_13815" result="shape" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.397708 0 0 0 0 0.47749 0 0 0 0 0.575 0 0 0 0.18 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_422_13815"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_422_13815"
+            result="shape"
+          />
         </filter>
-        <linearGradient id="paint0_linear_422_13815" x1="37.2534" y1="8.61508" x2="39.3569" y2="8.61508" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="paint0_linear_422_13815"
+          x1="37.2534"
+          y1="8.61508"
+          x2="39.3569"
+          y2="8.61508"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FF66A9" />
           <stop offset="1" stopColor="#F53689" />
         </linearGradient>
-        <linearGradient id="paint1_linear_422_13815" x1="88.7406" y1="23.9163" x2="90.7161" y2="23.9163" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          id="paint1_linear_422_13815"
+          x1="88.7406"
+          y1="23.9163"
+          x2="90.7161"
+          y2="23.9163"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop stopColor="#FF66A9" />
           <stop offset="1" stopColor="#F53689" />
         </linearGradient>

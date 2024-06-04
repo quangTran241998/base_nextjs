@@ -1,8 +1,15 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { LANGUAGE } from "@/interfaces/enum";
+import type { Metadata } from "next";
 
-export default async function LocaleLayout({
+export const metadata: Metadata = {
+  title: "Home esim",
+  description: "Intro esim",
+  keywords: ["intro esim", "gioi thieu esim", "esim"],
+};
+
+export default async function HomeLayout({
   children,
   params: { locale },
 }: {

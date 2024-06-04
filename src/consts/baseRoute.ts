@@ -1,7 +1,6 @@
 const BaseRoute = {
   // ImportBaseURL
-  Homepage: "/",
-  Todos: "/todos",
+  Homepage: "/home",
   DefaultLogin: "/login",
   Login: "/login",
   LoginOtp: "/login/otp",
@@ -30,8 +29,8 @@ const BaseRoute = {
   Contact: "/contact",
   Nations: "/buy-esim/nations",
   Areas: "/buy-esim/areas",
-  Globals: "/buy-esim/global",
-  MySim: "/my-sim",
+  Global: "/buy-esim/global",
+  MySim: "/my-esim",
   ESimInfo: "/my-sim/esim-detail",
   SettingESim: "/my-sim/setting-esim",
   Instructions: "/my-sim/instructions",

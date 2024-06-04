@@ -78,7 +78,7 @@
     }
   
     .text-link {
-      @apply text-[14px] text-[#2F6AFF] cursor-pointer underline;
+      @apply text-sky-400/100 underline underline-offset-2;
     }
   
     .text-60 {

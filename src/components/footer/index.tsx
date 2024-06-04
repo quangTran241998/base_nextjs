@@ -224,14 +224,15 @@ export default function Footer() {
             <div className="lg:flex sm:items-center sm:justify-between">
               <ul className="text-primary text-base sm:flex">
                 <li className="hidden sm:block font-medium mb-2 ms:mb-0 sm:mr-4 underline underline-offset-2">
-                  <a href={BaseRoute.PrivacyPolicy}>{t("privacyPolicy")}</a>
+                  <a href={`/en${BaseRoute.PrivacyPolicy}`}>
+                    {t("privacyPolicy")}
+                  </a>
                 </li>
                 <li className="hidden sm:block font-medium mb-2 ms:mb-0 sm:mr-4 underline underline-offset-2">
                   <a href={BaseRoute.TermsConditions}>
                     {t("termsAndConditions")}
                   </a>
                 </li>
-                {/* xs size */}
                 <div className="flex justify-center gap-4 sm:hidden">
                   <li className="text-sm font-medium mb-2 ms:mb-0 sm:mr-4 underline underline-offset-3 leading-[24px]">
                     <a href={BaseRoute.PrivacyPolicy}>{t("privacyPolicy")}</a>
@@ -242,7 +243,6 @@ export default function Footer() {
                     </a>
                   </li>
                 </div>
-                {/* xs size */}
                 <li className="text-center sm:text-left text-[16px] sm:text-md font-medium underline underline-offset-3 leading-[26px]">
                   <a href={BaseRoute.CookiesPolicy}>{t("cookiesPolicy")}</a>
                 </li>
